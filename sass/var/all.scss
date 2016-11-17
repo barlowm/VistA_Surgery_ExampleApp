@@ -43,3 +43,6 @@ $panel-header-color : dynamic(navy);
 
 $panel-frame-background-color: #FFFFFF !default;
 
+li.x-boundlist-item > .even {
+    background-color: cyan;
+}
