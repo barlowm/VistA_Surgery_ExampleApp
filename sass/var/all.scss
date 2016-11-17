@@ -1,0 +1,45 @@
+/*
+ * This is is imported by virtue of "sass.var" in "app.json".
+ */
+
+$enable-font-awesome: dynamic(true);
+/** use for Neptune theme
+$panel-header-background-gradient : dynamic(color-stops(#0C5182, #5cb2f0));
+ **/
+
+/* Use for classic theme */
+$panel-header-background-gradient : dynamic(color-stops(#96aecf, #eef1f7));
+$panel-header-color : dynamic(navy);
+/* $panel-body-background-color : dynamic(silver); */
+
+.x-panel-header-title-default-framed > .x-title-text-default-framed:after,
+.x-panel-header-title-default > .x-title-text-default:after {
+    font-family: ext-watermark;
+    font-size: 0!important;
+    content: ''!important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #7b9eca;
+}
+
+/*
+#SurgeryInfoPanel > .x-panel-header, 
+#SurgeryMainPanel > .x-panel-header  { 
+	border-radius: 10px 10px 0px 0px 
+}
+
+#SurgeryInfoPanel > .x-panel-body-default,
+#SurgeryMainPanel > .x-panel-body-default  {
+	border-radius: 0px 0px 10px 10px 
+}
+
+#SurgeryFooterPanel > .x-panel-header-default , #SurgeryHeaderPanel > .x-panel-header-default {
+	border-left: none;
+	border-right:none;
+}
+*/
+
+
+$panel-frame-background-color: #FFFFFF !default;
+
