@@ -72,7 +72,8 @@ The Radio call, executes a "createNotification" method that is implemented insid
 
 
 ## Multiples ##
-Source and comments are in: *js/components/form/multiple.js*
+Source and comments are in: ***js/components/form/multiple.js***
+*You **can** combine them*
 
 Multiples are handled as extensions of the form system.  A multiple view creates a table, where each row is a form (made via the form system) bound the model in the collection represented.  A multipleview can be standalone, but will more likely be embedded as a subform into a parent form.
 
