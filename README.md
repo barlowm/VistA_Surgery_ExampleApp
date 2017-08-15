@@ -4,6 +4,8 @@ Reworked Source for the VistA-Surgery GUI using Backbone/Marionette
 
 Dev Notes (as needed):
 For forms the following is a standard JSON object to define a field:
+
+```
     {
         "label": "<some text>",
         "field": "<fieldname from model>",
@@ -19,6 +21,8 @@ For forms the following is a standard JSON object to define a field:
         "selSrc": <if select>,
         "width": 6 <-- # of columns if left out defaults to 6 of 12 cols
     }
+```    
+
 Definition of the fields for a form is in `src/js/components/form/view.js`
 
 ## Generate Alert Notification:
@@ -27,11 +31,14 @@ What is the api for creating alert notifications?
 It's a Radio call.
 First, put this inside the initialize method in your view:
 
+```
     this.createNotificationChannel = 
         Backbone.Radio.channel("createNotificationChannel");    
+```
 
 Then, wherever you want to send the notification in your view, do this:
 
+```
     this.createNotificationChannel.trigger("notification", {
         type: type,
         title: "SSLQI Release Request",
@@ -43,6 +50,7 @@ Then, wherever you want to send the notification in your view, do this:
         displayResult: true,
         users: NotificationUtil.getNotificationUsers(this.getOption("activeCase"))
     });
+```
 
 The above is an example.
 Some fields are self explanatory.
